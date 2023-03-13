@@ -12,4 +12,4 @@ def recommend_articles(x):
     return ", ".join(data["Title"].loc[x.argsort()[-5:-1]])
 data["Recommended Articles"] = [recommend_articles(x) for x in uni_sim]
 data.head()
-print(data["Recommended Articles"][22])
+print(data["Recommended Articles"][22]) \
